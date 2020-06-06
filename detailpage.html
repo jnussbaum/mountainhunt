@@ -38,7 +38,7 @@
           <img src="resources/pontresina-diavolezzahutte-modern.jpg" style="height: 300px;" alt="missing pic"/>
         </td>
       </tr>
-      <tr>
+      <tr style="vertical-align: top;">
         <td>
           Walter Früh, "Diavolezzahütte", Oil, ca. 1930.
         </td>
@@ -52,7 +52,7 @@
             <button type="button" onclick="like(-1)" id="buttonDisLike">
             	dislike
             </button>
-            You have <span id="counter">12</span> Likes
+            <span id="counter">12</span> Likes
           </div>
         </td>
       </tr>
@@ -66,8 +66,34 @@
     <br>
     <p>Other users also uploaded these images:</p>
     <table style="width: 100%;">
+    <script language="javascript" type="text/javascript">
+      for (var a = 0; a < 3; a++) {
+        document.write("<tr>");
+        for (var b = 0; b < 3; b++) {
+          var random = Math.floor(Math.random() * 11) + 1;
+          document.write("<td><img src='resources/mock-1.jpg' style='height: 100px;'/><br><div class='button'><button type='button' onclick='like(1)'>like</button><button type='button' onclick='like(-1)'>dislike</button><span id='counter'>" + random + "</span> Likes</div><br></td>");
+        }
+        document.write("</tr>");
+      }
+      </script>
+    </table>
+
+
+    <!--
+    <table style="width: 100%;">
       <tr>
-        <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-1.jpg" style="height: 100px;"/>
+          <br>
+          <div class="button">
+            <button type="button" onclick="like(1)" id="buttonLike">
+              like
+            </button>
+            <button type="button" onclick="like(-1)" id="buttonDisLike">
+              dislike
+            </button>
+            <span id="counter">12</span> Likes
+          </div>
+        </td>
         <td><img src="resources/mock-2.jpg" style="height: 100px;"/></td>
         <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
       </tr>
@@ -82,7 +108,7 @@
         <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
       </tr>
       </table>
-
+-->
 
 
   </div>

@@ -44,3 +44,9 @@ body {
  .sidenav {padding-top: 15px;}
  .sidenav a {font-size: 18px;}
 }
+
+.button {
+  font-family: Arial;
+  font-size: 12pt;
+  color: grey;
+}

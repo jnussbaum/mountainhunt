@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="JS/like.js"></script>
     <title>Mountain Hunt</title>
   </head>
   <body>
 
     <!-- Side navigation -->
 <div class="sidenav">
-  <img src="resources/Logo.jpg" style="height: 150px" alt="missing pic" />
+  <a href="index.html">
+    <img src="resources/Logo.png" style="height: 140px;" alt="missing pic" />
+  </a>
  <a href="#">Search</a>
  <a href="#">I'm ready for a challenge</a>
  <a href="#">Most found</a>
@@ -33,17 +36,53 @@
         </td>
         <td>
           <img src="resources/pontresina-diavolezzahutte-modern.jpg" style="height: 300px;" alt="missing pic"/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Walter Früh, "Diavolezzahütte", Oil, ca. 1930.
-          </td>
-          <td>
-            Match found on Google.
-          </td>
-        </tr>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Walter Früh, "Diavolezzahütte", Oil, ca. 1930.
+        </td>
+        <td>
+          Match found on Google.
+          <br>
+          <div class="button">
+            <button type="button" onclick="like(1)" id="buttonLike">
+            	like
+            </button>
+            <button type="button" onclick="like(-1)" id="buttonDisLike">
+            	dislike
+            </button>
+            You have <span id="counter">12</span> Likes
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    Location of this image
+    <br>
+    <iframe src='https://map.geo.admin.ch/embed.html?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,ch.swisstopo.hiks-dufour&layers_visibility=false,false,false,false,true&layers_timestamp=18641231,,,,&zoom=4.9771576752938325&layers_opacity=1,1,1,0.8,1&E=2794388.02&N=1141955.62' width='100%' height='500' frameborder='0' style='border:0'></iframe>
+    <br>
+    <br>
+    <p>Other users also uploaded these images:</p>
+    <table style="width: 100%;">
+      <tr>
+        <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-2.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
+      </tr>
+      <tr>
+        <td><img src="resources/mock-2.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-2.jpg" style="height: 100px;"/></td>
+      </tr>
+      <tr>
+        <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-2.jpg" style="height: 100px;"/></td>
+        <td><img src="resources/mock-1.jpg" style="height: 100px;"/></td>
+      </tr>
       </table>
+
 
 
   </div>

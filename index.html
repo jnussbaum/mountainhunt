@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Mountain Hunt</title>
     <script src="JS/picturesloader.js"></script>
+    <script src="JS/slider.js"></script>
   </head>
   <body>
 
@@ -13,36 +14,53 @@
   <a href="index.html">
     <img src="resources/Logo.png" style="height: 140px;" alt="missing pic" />
   </a>
+  <br>
  <a href="#">Search</a>
  <a href="#">I'm ready for a challenge</a>
  <a href="#">Most found</a>
  <a href="#">Most difficult to find</a>
- <a href="#">About</a>
+ <a href="about.html">About</a>
  <a href="#">Download the app</a>
 </div>
 
 <!-- Page content -->
 <div class="main">
     <h1>Graubünden Mountain Hunt</h1>
-    <p>
+    <p style="text-align: left;">
       The Capauliana pictures are historical images of Graubünden, provided by the Fundaziun Capauliana.
       But how might these places look nowadays? Make yourself ready for this challenge: Pick a picture you like,
       try to find it on your hike, and take a picture of how the landscape looks nowadays.
     </p>
-    <p>Pontresina, Diavolezzahütte</p>
-    <a href="detailpage.html">
-      <img src="resources/pontresina-diavolezzahutte-alt.jpg" style="height: 300px;" alt="missing pic"/>
-    </a>
-    <img src="resources/pontresina-diavolezzahutte-modern.jpg" style="height: 300px;" alt="missing pic"/>
+    <a href=detailpage.html><p>Pontresina, Diavolezzahütte</p></a>
+    <p>
+      <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img src="resources\pontresina-diavolezzahutte-alt.jpg" width="600" height="400">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+  	       <img id="output" width="600" height="400"/>
+         </div>
+       </div>
+     </p>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+  <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
 
 
+   <!--
     <form Name="" Method="" Action="">
       <input type="file" accept="image/*">
     </form>
     <button onclick="bild(2)">I am a picture</button>
-
-
-    <div id="output"></div>
+-->
   </div>
   </body>
 

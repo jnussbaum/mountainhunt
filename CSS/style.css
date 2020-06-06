@@ -33,10 +33,11 @@ body {
 
 /* Style page content */
 .main {
- text-align: center;
- margin-left: 160px; /* Same as the width of the sidebar */
+ text-align: left;
+ margin-left: 220px; /* Same as the width of the sidebar */
  margin-right: 400px;
  padding: 0px 10px;
+ font-size: 14pt;"
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -49,4 +50,36 @@ body {
   font-family: Arial;
   font-size: 12pt;
   color: grey;
+}
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 20px;
+  height: 20px;
+  background-color: #d4ba79;
+  opacity: 0.8
+	  ;
+  border-radius: 50%;
 }
